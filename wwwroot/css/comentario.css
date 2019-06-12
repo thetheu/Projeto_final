@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.pridiv{
+    display: flex;
+}
+.comentario{
+
+    width: 500px;
+    height: 300px;
+    left: 1000px;
+}

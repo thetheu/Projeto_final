@@ -1,0 +1,24 @@
+@{
+    var user = (string) ViewData["User"];
+}
+ <link rel="stylesheet" href="/css/cadastro.css" type="text/css">
+  
+ <nav>
+    <div class="section-container">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="active"></a></li>
+                <li><a href='@Url.Action("Index", "Home")#Home'>Ponto Digital</a></li>      
+                <li><a href='@Url.Action("Index", "QuemSomos")#QuemSomos'>Quem Somos</a></li>
+                <li><a href='@Url.Action("Index", "Sac")#Sac'>Sac</a></li>
+                <li><a href='@Url.Action("Index", "Cadastro")#Cadastro'>Cadastro</a></li>
+               @if(string.IsNullOrEmpty(user))
+               {
+                    <li><a href='@Url.Action("Index","Login")'>Login</a></li>
+               }else
+               {
+                    <li><a href='@Url.Action("Logout","Login")'>Logout</a></li>
+               }
+        </ul>   
+    </div>
+</nav>
+
