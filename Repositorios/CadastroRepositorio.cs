@@ -42,6 +42,7 @@ namespace Projeto_final.Repositorios
                     cadastre.Email = dados[2];
                     cadastre.Senha = dados[3];
                     cadastre.DataNascimento = DateTime.Parse(dados[4]);
+                    cadastre.Administrador = dados[5];
 
                     listaDeClientes.Add(cadastre);
                     

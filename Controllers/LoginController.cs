@@ -31,7 +31,6 @@ namespace Projeto_final.Controllers
                 {
                     HttpContext.Session.SetString(SESSION_EMAIL, cadastre);
                     HttpContext.Session.SetString(SESSION_CLIENTE, item.Nome);
-                    System.Console.WriteLine("LOGOOOOOOOOOOOOOOOOOOOOOOOOOU!");
                 }
             }
             return RedirectToAction("Index", "Comentario");

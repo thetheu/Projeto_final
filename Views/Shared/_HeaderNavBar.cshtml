@@ -1,13 +1,32 @@
 @{
     var user = (string) ViewData["User"];
+    var adm = (string) ViewData["Adm"];
 }
- <link rel="stylesheet" href="/css/cadastro.css" type="text/css">
-  
- <nav>
-    <div class="section-container">
-        <ul>
-            <li><a asp-controller="Home" asp-action="Index" class="active"></a></li>
-                <li><a href='@Url.Action("Index", "Home")#Home'>Ponto Digital</a></li>      
+
+    @if ()
+    {
+        
+    }
+
+<nav class="menu">
+            <!-- <a class="toggle-nav" href="#">&#9776;</a> -->
+            <ul class="active">
+                
+                <li><a href='@Url.Action("Index", "Home")#Home'>Ponto Digital</a></li>   
+                
+                <li><img src="img/logo..jpg" class="logo"></li>
+
+                <li>
+                    <form class="search-form">
+                        <input type="text" class="pesquisa">
+                        <button class="search">Pesquisar</button>
+                    </form>
+                </li>
+            </ul>
+            <ul class="atalhos">
+                <li>
+                    <h2 class="slogan">Sua Empresa Em Seus Olhos</h2>
+                </li>
                 <li><a href='@Url.Action("Index", "QuemSomos")#QuemSomos'>Quem Somos</a></li>
                 <li><a href='@Url.Action("Index", "Sac")#Sac'>Sac</a></li>
                 <li><a href='@Url.Action("Index", "Cadastro")#Cadastro'>Cadastro</a></li>
@@ -18,7 +37,6 @@
                {
                     <li><a href='@Url.Action("Logout","Login")'>Logout</a></li>
                }
-        </ul>   
-    </div>
-</nav>
+            </ul>
+        </nav>
 

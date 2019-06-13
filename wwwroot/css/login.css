@@ -122,12 +122,6 @@ legend{
     width: 600px;
     
 }
-.nome{
-    position:absolute;
-    margin-top: 45px;
-    margin-left:90px;
-    font-size: 25px;
-}
 .email{
     position:absolute;
     margin-top: 105px;
@@ -139,20 +133,6 @@ legend{
     margin-top: 155px;
     margin-left:90px;
     font-size: 25px;
-}
-.data{
-    position:absolute;
-    margin-top: 215px;
-    margin-left: 90px;
-    font-size: 25px;
-}
-#formulario input.campo_nome{
-    background-color: white;
-    position:absolute;
-    left:90px;
-    margin-top:80px;
-    width:400px;
-    height: 35px;
 }
 #formulario input.campo_email{ 
     background-color: white;

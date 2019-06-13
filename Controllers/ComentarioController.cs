@@ -28,7 +28,6 @@ namespace Projeto_final.Controllers
 
             comentario.Cadastro = cadastroRetornado;
             comentario.Texto = form["comentario"];
-            Console.WriteLine("olhaaa aquiiiiiiiiiii" + email);
             
 
             ComentarioRepositorio cr = new ComentarioRepositorio();
